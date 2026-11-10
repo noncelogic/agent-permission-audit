@@ -78,7 +78,3 @@ shared or published, and is deleted within 7 days of your write-up being
 delivered — you can withdraw and have everything deleted at any point,
 including after delivery. The full handling terms are stated on the intake
 page, before any submission path — that's when they matter.
-
-## License
-
-MIT — see `LICENSE`.
