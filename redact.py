@@ -69,7 +69,7 @@ PEM_BEGIN_RE = re.compile(r"-----BEGIN [A-Z ]*PRIVATE KEY-----")
 PEM_END_RE = re.compile(r"-----END [A-Z ]*PRIVATE KEY-----")
 
 BEARER_RE = re.compile(r"(?i)(bearer\s+)[A-Za-z0-9._\-+/=]{8,}")
-URL_PASSWORD_RE = re.compile(r"([a-zA-Z][a-zA-Z0-9+.-]*://[^:\s/@]+:)([^@\s/]{3,})(@)")
+URL_PASSWORD_RE = re.compile(r"([a-zA-Z][a-zA-Z0-9+.-]{0,32}://[^:\s/@]{1,256}:)([^@\s/]{3,256})(@)")
 TOKEN_CANDIDATE_RE = re.compile(r"[A-Za-z0-9+/=_-]{20,}")
 UUID_RE = re.compile(
     r"^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$")
